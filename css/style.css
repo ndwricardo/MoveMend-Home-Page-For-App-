@@ -1,0 +1,269 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+#heroGrid {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas:
+  "featuredProduct secondaryProduct"
+  "featuredProduct CTA";
+}
+
+#featuredProduct {
+  grid-area: featuredProduct;
+  background-image: url("../images/Hero-main-1.png");
+}
+
+#secondaryProduct {
+  grid-area: secondaryProduct;
+  background-image: url("../images/hero-main-2.png");
+}
+
+#CTA {
+  grid-area: CTA;
+  background-image: url("../images/hero-main-3-v2.png");
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+#headline {
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.8);
+  border-bottom: 5px solid #45B465;
+  position: absolute;
+  right: -50px;
+  top: 100px;
+  padding: 25px;
+  max-width: px;
+  z-index: 100;
+}
+
+.heroGridArea {
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #45B465;
+}
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+#navBar h1 {
+  width: 25%;
+  font-weight: 500;
+  color: #45B465;
+}
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+.icons img {
+  margin: 15px;
+  cursor: pointer;
+}
+.highlight {
+  color: #45B465;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: #45B465;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px 0px;
+}
+
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #636364;
+}
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  #heroGrid {
+    grid-template-areas:
+    "featuredProduct featuredProduct"
+    "secondaryProduct CTA";
+  }
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #F8F9F8;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  max-width: 400px;
+}
+
+.card img {
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.cardContent {
+  text-align: left;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.myProjects {
+  padding: 100px 30px;
+  padding-top: 24px;
+  background-color: #F8F9F8;
+}
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas:
+  "img1 content1"
+  "img2 content2"
+  "img3 content3"
+  ;
+}
+.workGrid img {
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+.img1, .img2, .img3, .content1, .content2, .content3 {
+  padding: 100px;
+}
+.mySkills h1 {
+  margin-top: 8;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.myProjects h1 {
+  margin-top: 24;
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.myProjects h3 {
+  margin-top: 8;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer {
+  background-color: #45B465;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+header img {
+  max-width: 100%;
+  margin-right: 20px;
+}
+.iconsH img {
+  margin: 10px 15%;
+  cursor: pointer;
+}
+.iconsH {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+}
